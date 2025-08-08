@@ -1,7 +1,7 @@
 Mikrotool - small CLI and GUI tool to switch ON/OFF mangle rules on Mikrotik routers.
 
 If you want to use this tool, just complete steps:
-1. Allow AIP access on Mikrotik router: open WinBox, connect to router, open IP Service List (IP -> Services) and enable API service with 8728 port. If you don't see that rule - this is a bug, just reboot router and repeat step 1. Note: API - SSL not supporter yet (in development).
+1. Allow API access on Mikrotik router: open WinBox, connect to router, open IP Service List (IP -> Services) and enable API service with 8728 port. If you don't see that rule - this is a bug, just reboot router and repeat step 1. Note: API - SSL not supporter yet (in development).
 2. If you are Linux Gnome user, and want to use GUI tool to get mangle switcher in system tray, you have to install GUI library. Open console and give command: 'sudo apt update -y && sudo apt install gir1.2-appindicator3-0.1 -y' 
 3. Edit api.conf file (nano api.conf) and change credentials of your routers: names, IPs, passwords. Do not change file structure, just credentials.
 
