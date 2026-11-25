@@ -65,6 +65,7 @@ def switchman(swarg):
             plaintext_login=True,
             use_ssl=USE_SSL
         )
+        connection.socket_timeout = 8.0
         api = connection.get_api()
         print("Connection successful.", file=sys.stderr)
         # Access the mangle resource with proper boolean handling
